@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Demo
+namespace Demeter.Agent.Auth
 {
     /// <summary>
     /// Provides options for <see cref="TokenProviderMiddleware"/>.

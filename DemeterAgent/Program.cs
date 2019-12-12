@@ -1,8 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 
-namespace Demo.Agent
+namespace Demeter.Agent
 {
     public class Program
     {
@@ -14,7 +18,6 @@ namespace Demo.Agent
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseUrls("http://*:8001/")
-                .UseApplicationInsights()
                 .Build();
 
             host.Run();

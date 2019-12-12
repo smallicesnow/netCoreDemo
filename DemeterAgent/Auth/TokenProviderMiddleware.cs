@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace Demo
+namespace Demeter.Agent.Auth
 {
     /// <summary>
     /// Token generator middleware component which is added to an HTTP pipeline.

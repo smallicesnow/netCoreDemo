@@ -1,6 +1,6 @@
-﻿namespace Demo.Object
+﻿namespace Demeter.Agent.Object
 {
-    public class Config
+    public class DemeterConfig
     {
         public string Username { get; set; }
         public string Password { get; set; }
