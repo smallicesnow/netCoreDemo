@@ -24,7 +24,7 @@ namespace Demeter.Agent
     {
         private static DemeterConfig config = new DemeterConfig();
         private const string PublicPolicy = "CorsPolicy";
-        private static readonly string secretKey = "xxxxx";
+        private static readonly string secretKey = "VnN0eVVvZ0Z5c2hCMHFlWFlQZDZnRGRLMmN3NWthblE5N1k3Zm9QbU1nSitIT0haV0JCWkZsaHBiKy9OUEV4SA==";
 
         public Startup(IHostingEnvironment env)
         {
@@ -60,10 +60,10 @@ namespace Demeter.Agent
                 IssuerSigningKey = signingKey,
                 // Validate the JWT Issuer (iss) claim
                 ValidateIssuer = false,
-                ValidIssuer = "ExampleIssuer",
+                //ValidIssuer = "ExampleIssuer",
                 // Validate the JWT Audience (aud) claim
                 ValidateAudience = false,
-                ValidAudience = "ExampleAudience",
+                //ValidAudience = "ExampleAudience",
                 // Validate the token expiry
                 ValidateLifetime = true,
                 // If you want to allow a certain amount of clock drift, set that here:
@@ -75,8 +75,8 @@ namespace Demeter.Agent
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
-                options.Authority = "ExampleIssuer";
-                options.Audience = "ExampleAudience";
+                //options.Authority = "ExampleIssuer";
+                //options.Audience = "ExampleAudience";
                 options.RequireHttpsMetadata = false;
                 options.IncludeErrorDetails = true;
                 options.TokenValidationParameters = tokenValidationParameters;

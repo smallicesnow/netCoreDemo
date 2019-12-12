@@ -67,11 +67,11 @@ namespace Demeter.Agent.Api
         }
         [HttpGet, Route("SendABC")]
         [Authorize]
-        public string SendABC(string request)
+        public IActionResult SendABC(string request)
         {
             _logger.LogDebug("Send a request " + request);
             //var result = _coreDbContext.Set<User>().ToList();
-            return request;
+            return new CreatedResult("api/Repost/SendABC", new {status="success", data=request });
         }
 
 
